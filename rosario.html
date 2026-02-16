@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rosario - Vita in Christo</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .slide {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 360px; /* 9:16 ratio untuk gambar */
+        height: 640px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .slide p {
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .next-btn {
+        padding: 10px 25px;
+        font-size: 1em;
+        color: #fff;
+        background-color: #6a1b9a;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .next-btn:hover {
+        background-color: #4a148c;
+    }
+</style>
+</head>
+<body>
+
+<!-- Slide container -->
+<div id="slides-container">
+
+    <!-- Slide 1 -->
+    <div class="slide">
+        <img src="img1.jpg" alt="Doa Awal">
+        <p>Dalam nama Bapa dan Putra dan Roh Kudus. Amen</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <img src="img2.jpg" alt="Aku percaya">
+        <p>Aku percaya kepada Allah Bapa yang maha kuasa...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 3 (intensi) -->
+    <div class="slide">
+        <img src="img3.jpg" alt="Intensi">
+        <p>[Teks intensi akan dimasukkan di sini]</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 4: Bapa Kami -->
+    <div class="slide">
+        <img src="img4.jpg" alt="Bapa Kami">
+        <p>Bapa Kami...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 5: Salam Maria -->
+    <div class="slide">
+        <img src="img5.jpg" alt="Salam Maria">
+        <p>Salam Maria...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 6: Kemuliaan & Doa Fatima -->
+    <div class="slide">
+        <img src="img6.jpg" alt="Kemuliaan & Doa Fatima">
+        <p>Kemuliaan & Doa Fatima...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 7: Misteri Pertama -->
+    <div class="slide">
+        <img src="img7.jpg" alt="Misteri Pertama">
+        <p>Misteri Pertama...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 8: Bapa Kami -->
+    <div class="slide">
+        <img src="img8.jpg" alt="Bapa Kami">
+        <p>Bapa Kami...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 9: 10x Salam Maria -->
+    <div class="slide">
+        <img src="img9.jpg" alt="10x Salam Maria">
+        <p>10x Salam Maria...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 6: Kemuliaan & Doa Fatima -->
+    <div class="slide">
+        <img src="img6.jpg" alt="Kemuliaan & Doa Fatima">
+        <p>Kemuliaan & Doa Fatima...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 7: Misteri Kedua -->
+    <div class="slide">
+        <img src="img7.jpg" alt="Misteri Pertama">
+        <p>Misteri Pertama...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 8: Bapa Kami -->
+    <div class="slide">
+        <img src="img8.jpg" alt="Bapa Kami">
+        <p>Bapa Kami...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 9: 10x Salam Maria -->
+    <div class="slide">
+        <img src="img9.jpg" alt="10x Salam Maria">
+        <p>10x Salam Maria...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 6: Kemuliaan & Doa Fatima -->
+    <div class="slide">
+        <img src="img6.jpg" alt="Kemuliaan & Doa Fatima">
+        <p>Kemuliaan & Doa Fatima...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 7: Misteri Ketiga -->
+    <div class="slide">
+        <img src="img7.jpg" alt="Misteri Pertama">
+        <p>Misteri Pertama...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 8: Bapa Kami -->
+    <div class="slide">
+        <img src="img8.jpg" alt="Bapa Kami">
+        <p>Bapa Kami...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 9: 10x Salam Maria -->
+    <div class="slide">
+        <img src="img9.jpg" alt="10x Salam Maria">
+        <p>10x Salam Maria...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 6: Kemuliaan & Doa Fatima -->
+    <div class="slide">
+        <img src="img6.jpg" alt="Kemuliaan & Doa Fatima">
+        <p>Kemuliaan & Doa Fatima...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 7: Misteri Keempat -->
+    <div class="slide">
+        <img src="img7.jpg" alt="Misteri Pertama">
+        <p>Misteri Pertama...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 8: Bapa Kami -->
+    <div class="slide">
+        <img src="img8.jpg" alt="Bapa Kami">
+        <p>Bapa Kami...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 9: 10x Salam Maria -->
+    <div class="slide">
+        <img src="img9.jpg" alt="10x Salam Maria">
+        <p>10x Salam Maria...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 6: Kemuliaan & Doa Fatima -->
+    <div class="slide">
+        <img src="img6.jpg" alt="Kemuliaan & Doa Fatima">
+        <p>Kemuliaan & Doa Fatima...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 7: Misteri Kelima -->
+    <div class="slide">
+        <img src="img7.jpg" alt="Misteri Pertama">
+        <p>Misteri Pertama...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 8: Bapa Kami -->
+    <div class="slide">
+        <img src="img8.jpg" alt="Bapa Kami">
+        <p>Bapa Kami...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 9: 10x Salam Maria -->
+    <div class="slide">
+        <img src="img9.jpg" alt="10x Salam Maria">
+        <p>10x Salam Maria...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Slide 6: Kemuliaan & Doa Fatima -->
+    <div class="slide">
+        <img src="img6.jpg" alt="Kemuliaan & Doa Fatima">
+        <p>Kemuliaan & Doa Fatima...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Doa Intensi -->
+    <div class="slide">
+        <img src="img11.jpg" alt="Doa Intensi">
+        <p>Doa intensi...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Salam Ya Ratu -->
+    <div class="slide">
+        <img src="img12.jpg" alt="Salam Ya Ratu">
+        <p>Salam Ya Ratu...</p>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Akhir: Dalam nama Bapa -->
+    <div class="slide">
+        <img src="img13.jpg" alt="Penutup">
+        <p>Dalam nama Bapa dan Putra dan Roh Kudus. Amen</p>
+        <button class="next-btn" onclick="goHome()">Kembali ke Home</button>
+    </div>
+
+</div>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? 'flex' : 'none';
+    });
+}
+
+slides.forEach((slide, index) => {
+    const btn = slide.querySelector('.next-btn');
+    btn.addEventListener('click', () => {
+        currentSlide++;
+        if (currentSlide >= slides.length) currentSlide = slides.length - 1;
+        showSlide(currentSlide);
+    });
+});
+
+// Inisialisasi slide pertama
+showSlide(currentSlide);
+
+// Fungsi kembali ke home
+function goHome() {
+    window.location.href = 'index.html';
+}
+</script>
+
+</body>
+</html>
